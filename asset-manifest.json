@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cyphon_textplay/static/css/main.a4a20492.chunk.css",
+    "main.js": "/cyphon_textplay/static/js/main.883b408e.chunk.js",
+    "main.js.map": "/cyphon_textplay/static/js/main.883b408e.chunk.js.map",
+    "runtime-main.js": "/cyphon_textplay/static/js/runtime-main.e0a3823e.js",
+    "runtime-main.js.map": "/cyphon_textplay/static/js/runtime-main.e0a3823e.js.map",
+    "static/js/2.e24845f3.chunk.js": "/cyphon_textplay/static/js/2.e24845f3.chunk.js",
+    "static/js/2.e24845f3.chunk.js.map": "/cyphon_textplay/static/js/2.e24845f3.chunk.js.map",
+    "static/js/3.9935e1df.chunk.js": "/cyphon_textplay/static/js/3.9935e1df.chunk.js",
+    "static/js/3.9935e1df.chunk.js.map": "/cyphon_textplay/static/js/3.9935e1df.chunk.js.map",
+    "index.html": "/cyphon_textplay/index.html",
+    "static/css/main.a4a20492.chunk.css.map": "/cyphon_textplay/static/css/main.a4a20492.chunk.css.map",
+    "static/js/2.e24845f3.chunk.js.LICENSE.txt": "/cyphon_textplay/static/js/2.e24845f3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0a3823e.js",
+    "static/js/2.e24845f3.chunk.js",
+    "static/css/main.a4a20492.chunk.css",
+    "static/js/main.883b408e.chunk.js"
+  ]
+}
