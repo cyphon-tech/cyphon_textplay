@@ -8,12 +8,12 @@ import Alert from './components/Alert';
 
 
 
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
   
-// } from "react-router-dom";
+} from "react-router-dom";
 
 
 
@@ -34,20 +34,24 @@ function App() {
   }
 
 
+  const removeBodyClasses=()=>{
+    document.body.classList.remove('bg-light')
+    document.body.classList.remove('bg-dark')
+    document.body.classList.remove('bg-warning')
+    document.body.classList.remove('bg-danger')
+    document.body.classList.remove('bg-success')
+  }
 
 
-  const toggleMode =()=>{
+
+  const toggleMode =(cls)=>{
+    removeBodyClasses();
+    document.body.classList.add('bg-'+cls)
     if(Mode==='light'){
     setMode('dark');
     document.body.style.backgroundColor='#042743';
     showAlert("dark mode is enabled","success");
-    document.title='cyphon-tech-dark'; // changing title of website 
-    // setInterval(() => {
-    //   document.title='cyphon-tech-dangerous';
-    // }, 2000);
-    // setInterval(() => {                                             // this is used to attract the people near you
-    //   document.title='cyphon-tech-virus';
-    // }, 1500);
+  
     }
     else
     {
@@ -61,23 +65,22 @@ function App() {
     <>
 
 
- {/* <Router> */}
+ <Router>
   <Navbar title="Cyphon-Tech" aboutText="About" Mode={Mode} toggleMode={toggleMode}/>
   <Alert alert={alert}/>
   <div className="container my-3">
-  {/* <Switch>
+  <Switch>
           <Route exact path="/about">
-            <About />
-          </Route> */}
+            <About Mode={Mode} />
+          </Route>
            
-          {/* <Route  path="/"> */}
-          <TextForm showAlert={showAlert} heading="enter text"Mode={Mode}/>
-            {/* <About/> */}
-          {/* </Route>
-        </Switch> */}
+          <Route  path="/">
+          <TextForm showAlert={showAlert} heading="Try Cyphon-Tech - Word & Char counter , RemoveSpaces"Mode={Mode}/>
+           </Route>
+        </Switch> 
         
   </div>
-        {/* </Router> */}
+        </Router>
  
 
 
